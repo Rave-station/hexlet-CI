@@ -30,4 +30,17 @@ jobs:
       - uses: jdx/mise-action@82a612c5ab8bcda7cc5db6b7e81a8e7584c3dc6e # v5.2.3
       # BEGIN
       # Set the project up, run the linter and run the tests.
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 12.6.0
+
+      - name: Install dependencies and setup project
+        run: make setup
+
+      - name: Run linter
+        run: make lint
+
+      - name: Run tests
+        run: make test
       # END
