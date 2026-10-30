@@ -44,4 +44,9 @@ jobs:
 
       - name: Run tests
         run: make test
-      # END
+
+      - name: Hello from Hexlet
+        # jactionlint: disable-next-line unpinned-uses
+        uses: hexlet-components/hello-from-hexlet-action@release
+
+# END
