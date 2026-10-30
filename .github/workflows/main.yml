@@ -32,7 +32,7 @@ jobs:
       # Set the project up, run the linter and run the tests.
       - name: Setup pnpm
          #jactionlint: disable-next-line unpinned-uses
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
         with:
           version: 12.6.0
 
